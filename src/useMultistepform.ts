@@ -13,7 +13,7 @@ export function useMultistepForm (steps : React.ReactElement[]) {
 
     function back () {
       setCurrentStepIndex( i => {
-        if (i <= steps.length -1) return i
+        if (i <= 0 ) return i
         return i - 1;
       })
     }
